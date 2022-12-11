@@ -12,21 +12,21 @@ namespace Unity.Tutorials
     {
         public FutureObjectReference futureRoomInstance = default;
         public FutureObjectReference futureBotInstance = default;
-        NavMeshSurface navMeshSurface = default;
+        // NavMeshSurface navMeshSurface = default;
 
-        public bool NavMeshIsBuilt()
-        {
-            return navMeshSurface.navMeshData != null;
-        }
+        // public bool NavMeshIsBuilt()
+        // {
+        //     return navMeshSurface.navMeshData != null;
+        // }
 
         public void ClearAllNavMeshes()
         {
-            if (!navMeshSurface)
-            {
-                navMeshSurface = GameObject.FindObjectOfType<NavMeshSurface>();
-            }
+            // if (!navMeshSurface)
+            // {
+            //     navMeshSurface = GameObject.FindObjectOfType<NavMeshSurface>();
+            // }
             UnityEditor.AI.NavMeshBuilder.ClearAllNavMeshes();
-            navMeshSurface.navMeshData = null;
+            // navMeshSurface.navMeshData = null;
         }
 
         /// <summary>
