@@ -17,6 +17,9 @@ public class WeaponStats : MonoBehaviour
 
     public void Init(WeaponController weapon)
     {
+        if(weapon is null)
+            return;
+
         _weaponNameText.text     = weapon.WeaponName.ToUpper();
         _levelText.text          = $"Level : {weapon.WeaponData.Level}";
         _bulletsPerShotText.text = $"Bullets Per Shot : {weapon.WeaponData.Data.BulletsPerShot}";
@@ -25,4 +28,19 @@ public class WeaponStats : MonoBehaviour
         _damageText.text         = $"Damage : {weapon.WeaponData.Data.Damage}";
         gameObject.SetActive(true);
     }//Init() end
+
+    public void Init(WeaponDataObject weapon)
+    {
+        if(weapon is null)
+            return;
+            
+        _weaponNameText.text     = weapon.WeaponName.ToUpper();
+        _levelText.text          = $"Level : {weapon.Level}";
+        _bulletsPerShotText.text = $"Bullets Per Shot : {weapon.Data.BulletsPerShot}";
+        _clipSizeText.text       = $"Clip Size : {weapon.Data.ClipSize}";
+        _maxAmmoText.text        = $"Max Ammo : {weapon.Data.MaxAmmo}";
+        _damageText.text         = $"Damage : {weapon.Data.Damage}";
+        gameObject.SetActive(true);
+    }//Init() end
+
 }//class end

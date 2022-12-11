@@ -32,16 +32,21 @@ using Sirenix.OdinInspector;
     [CreateAssetMenu(fileName = "Weapon Data", menuName = "ScriptableObjects/Weapon Data", order = 1)]
     public class WeaponDataObject : ScriptableObject
     {
+        [SerializeField] string _weaponName = "Weapon";
         [SerializeField] int _level = 1;
         [Space]
         [SerializeField] WeaponData[] _upgrades = new WeaponData[1];
 
         // Properties
+        public string WeaponName => _weaponName;
         public int Level => _level;
         public WeaponData Data => _upgrades[_level-1];
+        public bool CanUpgrade => _level < _upgrades.Length;
 
         // Methods
         public void Init(int level) => _level = level;
+
+        public void Upgrade() => _level++;
 
     }//class end
 

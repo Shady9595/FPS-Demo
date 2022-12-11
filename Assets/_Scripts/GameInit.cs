@@ -10,6 +10,7 @@ public class GameInit : MonoBehaviour
 
     private void Awake()
     {    
+        Application.targetFrameRate = 60;
         // Making SaveData for the first time to save weapon Levels
         if(SaveData.Instance.WeaponLevels is null || SaveData.Instance.WeaponLevels.Count == 0)
         {

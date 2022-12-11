@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52adb3b2959a4f4f9529875e39aba04, type: 3}
   m_Name: 02 - Weapon Data
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManagerScriptableObject
+  _weaponName: Launcher
   _level: 1
   _upgrades:
   - _bulletsPerShot: 1
