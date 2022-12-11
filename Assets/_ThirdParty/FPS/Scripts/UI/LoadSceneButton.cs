@@ -8,7 +8,6 @@ namespace Unity.FPS.UI
     public class LoadSceneButton : MonoBehaviour
     {
         public string SceneName = "Splash";
-        // [SerializeField] SceneName _sceneName = 0;
 
         void Update()
         {
@@ -22,7 +21,6 @@ namespace Unity.FPS.UI
         public void LoadTargetScene()
         {
             SceneManager.LoadScene(SceneName);
-            // SceneManager.LoadScene(_sceneName.ToString());
         }
     }
 }

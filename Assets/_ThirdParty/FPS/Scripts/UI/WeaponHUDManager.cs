@@ -26,15 +26,17 @@ namespace Unity.FPS.UI
             DebugUtility.HandleErrorIfNullFindObject<PlayerWeaponsManager, WeaponHUDManager>(m_PlayerWeaponsManager,
                 this);
 
+            _weaponStats = Instantiate(_weaponStatsPrefab, AmmoPanel);
+            _weaponStats.gameObject.SetActive(false);
+
             WeaponController activeWeapon = m_PlayerWeaponsManager.GetActiveWeapon();
+            
             if (activeWeapon)
             {
                 AddWeapon(activeWeapon, m_PlayerWeaponsManager.ActiveWeaponIndex);
                 ChangeWeapon(activeWeapon);
             }
 
-            _weaponStats = Instantiate(_weaponStatsPrefab, AmmoPanel);
-            _weaponStats.gameObject.SetActive(false);
 
             m_PlayerWeaponsManager.OnAddedWeapon += AddWeapon;
             m_PlayerWeaponsManager.OnRemovedWeapon += RemoveWeapon;

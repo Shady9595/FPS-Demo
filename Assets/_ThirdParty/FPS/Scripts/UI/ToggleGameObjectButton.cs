@@ -9,13 +9,13 @@ namespace Unity.FPS.UI
         public GameObject ObjectToToggle;
         public bool ResetSelectionAfterClick;
 
-        void Update()
-        {
-            if (ObjectToToggle.activeSelf && Input.GetButtonDown(GameConstants.k_ButtonNameCancel))
-            {
-                SetGameObjectActive(false);
-            }
-        }
+        // void Update()
+        // {
+        //     if (ObjectToToggle.activeSelf && Input.GetButtonDown(GameConstants.k_ButtonNameCancel))
+        //     {
+        //         SetGameObjectActive(false);
+        //     }
+        // }
 
         public void SetGameObjectActive(bool active)
         {
