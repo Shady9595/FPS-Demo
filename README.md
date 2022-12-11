@@ -1,6 +1,7 @@
 # FPS-Demo
  
 - Editor Version Unity 2021.3.15f1 LTS
+- Project is based on Universal Render Pipeline.
 - FPS Demo game based on Unity's FPS Core Template.
 - Weapon Upgrades System Implemented.
 - Store Scene added for upgrading weapons.
