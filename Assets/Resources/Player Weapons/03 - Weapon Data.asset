@@ -19,11 +19,23 @@ MonoBehaviour:
     _clipSize: 10
     _maxAmmo: 2
     _damage: 10
-  - _bulletsPerShot: 20
+  - _bulletsPerShot: 15
     _clipSize: 20
     _maxAmmo: 4
     _damage: 20
-  - _bulletsPerShot: 30
+  - _bulletsPerShot: 20
     _clipSize: 30
     _maxAmmo: 6
     _damage: 30
+  - _bulletsPerShot: 24
+    _clipSize: 30
+    _maxAmmo: 8
+    _damage: 35
+  - _bulletsPerShot: 26
+    _clipSize: 30
+    _maxAmmo: 10
+    _damage: 40
+  - _bulletsPerShot: 30
+    _clipSize: 30
+    _maxAmmo: 12
+    _damage: 50

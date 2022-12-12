@@ -27,4 +27,18 @@ public class GameInit : MonoBehaviour
         }//else end
     }//Awake() end
 
+    public void ResetSaveData()
+    {
+        SaveData.Instance.Reset();
+
+        for(int i=0 ; i<_weapons.Length ; i++)
+            _weapons[i].Init(1);
+        
+        foreach(WeaponDataObject weaponData in _weapons)
+        {
+            SaveData.Instance.WeaponLevels.Add(weaponData.Level);
+        }//loop end
+        SaveSystem.SaveProgress();
+    }//ResetSaveData() end
+
 }//class end
