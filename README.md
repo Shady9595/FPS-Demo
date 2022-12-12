@@ -6,3 +6,7 @@
 - Weapon Upgrades System Implemented.
 - Store Scene added for upgrading weapons.
 - Weapon stats added to be displayed during gameplay.
+- Weapoon upgrades modifed from 3 to 6.
+- Pickups for more weapons placed.
+- More Enemies added.
+- Functionality for Save Data Reset Added.
